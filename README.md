@@ -27,8 +27,8 @@ Before you begin, ensure you have installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone []
-   cd calculator-app
+   git clone [git@github.com:haniyakonain/calculator.git]
+   cd calculator
    ```
 2. **Install dependencies**:
    ```bash
