@@ -2,7 +2,6 @@
 
 A **modern**, **responsive** calculator web application built with **React** and styled with **Tailwind CSS**. This app offers a clean, intuitive interface for basic mathematical operations and is designed to work seamlessly across all devices. ✨
 
-![Calculator Preview](/api/placeholder/800/400)
 
 ---
 
@@ -29,7 +28,7 @@ Before you begin, make sure you have:
 
 1. **Clone the repository**:  
    ```bash
-   git clone []
+   git clone [git@github.com:haniyakonain/calculator.git]
    cd calculator
    ```
 2. **Install dependencies**:  
