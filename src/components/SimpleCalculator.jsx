@@ -54,7 +54,7 @@ const SimpleCalculator = () => {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center p-4 md:p-0">
-      <div className="w-full md:w-96 bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+      <div className="w-full md:w-96 bg-white rounded-2xl shadow-lg overflow-hidden border border-white-100">
         {/* Header Section */}
         <div className="p-4 md:p-6 bg-gradient-to-r from-blue-500 to-purple-500">
           <h2 className="text-xl md:text-2xl font-bold text-white flex items-center gap-3">
@@ -68,39 +68,39 @@ const SimpleCalculator = () => {
           {/* Input Fields */}
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
+              <label className="block text-sm font-semibold text-white-700 mb-2">
                 First Number
               </label>
               <input
                 type="number"
                 value={num1}
                 onChange={(e) => setNum1(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none text-gray-800 placeholder-gray-400"
+                className="w-full px-4 py-3 rounded-lg border border-white-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none text-white-800 placeholder-white-400"
                 placeholder="Enter first number"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
+              <label className="block text-sm font-semibold text-white-700 mb-2">
                 Second Number
               </label>
               <input
                 type="number"
                 value={num2}
                 onChange={(e) => setNum2(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none text-gray-800 placeholder-gray-400"
+                className="w-full px-4 py-3 rounded-lg border border-white-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none text-white-800 placeholder-white-400"
                 placeholder="Enter second number"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
+              <label className="block text-sm font-semibold text-white-700 mb-2">
                 Operation
               </label>
               <select
                 value={operator}
                 onChange={(e) => setOperator(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none text-gray-800 bg-white"
+                className="w-full px-4 py-3 rounded-lg border border-white-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none text-white-800 bg-white"
               >
                 <option value="+">Addition (+)</option>
                 <option value="-">Subtraction (-)</option>
@@ -120,7 +120,7 @@ const SimpleCalculator = () => {
             </button>
             <button
               onClick={clearCalculator}
-              className="py-3 px-4 bg-gray-100 text-gray-700 rounded-lg font-semibold hover:bg-gray-200 transition-all duration-200"
+              className="py-3 px-4 bg-white-100 text-white-700 rounded-lg font-semibold hover:bg-white-200 transition-all duration-200"
             >
               Clear
             </button>
@@ -137,10 +137,10 @@ const SimpleCalculator = () => {
           {result !== null && (
             <div className="p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-blue-100">
               <div className="flex flex-col gap-1">
-                <span className="text-2xl font-bold text-gray-800">
+                <span className="text-2xl font-bold text-white-800">
                   {result}
                 </span>
-                <span className="text-sm text-gray-600">
+                <span className="text-sm text-white-600">
                   {num1} {operator} {num2} = {result}
                 </span>
               </div>
